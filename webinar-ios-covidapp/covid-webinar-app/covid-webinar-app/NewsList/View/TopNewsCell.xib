@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TopNewsCell" rowHeight="175" id="QCY-tE-fJq" customClass="TopNewsCell" customModule="covid_webinar_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QCY-tE-fJq" id="TNP-WO-AbC">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Bw-tLN" customClass="CardView" customModule="covid_webinar_app" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="310" height="179"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvU-bM-gs0">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="179"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="dAr-hN-1eD">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="179"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-4A-aUc">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="179"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9Z-Mt-neH">
+                                        <rect key="frame" x="16" y="124.5" width="278" height="38.5"/>
+                                        <string key="text">Konsep terpenting yang perlu dihayati dalam penanganan wabah seperti ini adalah EKSPONENSIAL. Kalau kita tidak memahami hal ini dan tetap berpikir dalam skala linear, selamanya kita tidak akan bisa menyelesaikan masalah ini.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAKARTA KARANTINA WILAYAH" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-zf-fgb">
+                                        <rect key="frame" x="16" y="72.5" width="278" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dlp-zf-fgb" firstAttribute="trailing" secondItem="y9Z-Mt-neH" secondAttribute="trailing" id="Chw-G3-9wS"/>
+                                    <constraint firstItem="nOZ-4A-aUc" firstAttribute="leading" secondItem="qvU-bM-gs0" secondAttribute="leading" id="DKE-mJ-o6f"/>
+                                    <constraint firstItem="dAr-hN-1eD" firstAttribute="top" secondItem="qvU-bM-gs0" secondAttribute="top" id="Kle-cT-Ict"/>
+                                    <constraint firstItem="y9Z-Mt-neH" firstAttribute="top" secondItem="Dlp-zf-fgb" secondAttribute="bottom" constant="4" id="Lbv-LF-gos"/>
+                                    <constraint firstItem="Dlp-zf-fgb" firstAttribute="leading" secondItem="y9Z-Mt-neH" secondAttribute="leading" id="NBZ-hd-nbm"/>
+                                    <constraint firstItem="dAr-hN-1eD" firstAttribute="leading" secondItem="qvU-bM-gs0" secondAttribute="leading" id="OfY-7g-IRD"/>
+                                    <constraint firstAttribute="bottom" secondItem="y9Z-Mt-neH" secondAttribute="bottom" constant="16" id="RJd-Yh-hXC"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAr-hN-1eD" secondAttribute="bottom" id="RTB-Y0-RKF"/>
+                                    <constraint firstItem="Dlp-zf-fgb" firstAttribute="top" secondItem="qvU-bM-gs0" secondAttribute="top" constant="72.5" id="TzZ-yq-7d6"/>
+                                    <constraint firstAttribute="bottom" secondItem="nOZ-4A-aUc" secondAttribute="bottom" id="W6N-Ob-9Ns"/>
+                                    <constraint firstAttribute="trailing" secondItem="nOZ-4A-aUc" secondAttribute="trailing" id="d8b-xq-Ixx"/>
+                                    <constraint firstAttribute="trailing" secondItem="dAr-hN-1eD" secondAttribute="trailing" id="fub-2U-viZ"/>
+                                    <constraint firstItem="nOZ-4A-aUc" firstAttribute="top" secondItem="qvU-bM-gs0" secondAttribute="top" id="kNT-33-AQv"/>
+                                    <constraint firstItem="y9Z-Mt-neH" firstAttribute="leading" secondItem="qvU-bM-gs0" secondAttribute="leading" constant="16" id="p70-kW-b9l"/>
+                                    <constraint firstAttribute="trailing" secondItem="y9Z-Mt-neH" secondAttribute="trailing" constant="16" id="pox-no-RXS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qvU-bM-gs0" secondAttribute="trailing" id="7oh-Qy-Muu"/>
+                            <constraint firstAttribute="bottom" secondItem="qvU-bM-gs0" secondAttribute="bottom" id="8pG-dS-RTr"/>
+                            <constraint firstItem="qvU-bM-gs0" firstAttribute="leading" secondItem="noX-Bw-tLN" secondAttribute="leading" id="daw-Xa-wGf"/>
+                            <constraint firstItem="qvU-bM-gs0" firstAttribute="top" secondItem="noX-Bw-tLN" secondAttribute="top" id="nyw-ad-Jey"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="noX-Bw-tLN" firstAttribute="leading" secondItem="TNP-WO-AbC" secondAttribute="leading" constant="4" id="RCu-Yu-VeT"/>
+                    <constraint firstItem="noX-Bw-tLN" firstAttribute="top" secondItem="TNP-WO-AbC" secondAttribute="top" constant="4" id="aB2-Hc-QBi"/>
+                    <constraint firstAttribute="trailing" secondItem="noX-Bw-tLN" secondAttribute="trailing" constant="4" id="fPj-aa-X9k"/>
+                    <constraint firstAttribute="bottom" secondItem="noX-Bw-tLN" secondAttribute="bottom" constant="10" id="wml-xG-lzd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descLbl" destination="y9Z-Mt-neH" id="GSS-yb-Rfd"/>
+                <outlet property="titleLbl" destination="Dlp-zf-fgb" id="VLj-TD-afg"/>
+            </connections>
+            <point key="canvasLocation" x="-163.768115942029" y="86.71875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="300" height="168"/>
+    </resources>
+</document>

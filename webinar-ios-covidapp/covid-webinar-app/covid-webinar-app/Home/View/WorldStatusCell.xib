@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorldStatusCell" id="UFB-fe-0i0" customClass="WorldStatusCell" customModule="covid_webinar_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="62g-8b-zUK">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POSITIF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZx-0c-2Wv">
+                        <rect key="frame" x="8" y="41.5" width="115" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.78922885659999997" green="0.12577793000000001" blue="0.12765321139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQ9-JB-3bO">
+                        <rect key="frame" x="4" y="0.0" width="123" height="37.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="103.404" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypG-MC-kOM">
+                                <rect key="frame" x="27.5" y="9" width="68.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78922885659999997" green="0.12577793000000001" blue="0.12765321139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypG-MC-kOM" firstAttribute="centerY" secondItem="JQ9-JB-3bO" secondAttribute="centerY" id="y5l-Ot-6wq"/>
+                            <constraint firstItem="ypG-MC-kOM" firstAttribute="centerX" secondItem="JQ9-JB-3bO" secondAttribute="centerX" id="ydu-QP-QCF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mZx-0c-2Wv" secondAttribute="trailing" constant="8" id="2E3-de-eQR"/>
+                    <constraint firstItem="JQ9-JB-3bO" firstAttribute="leading" secondItem="62g-8b-zUK" secondAttribute="leading" constant="4" id="7G2-F8-e4d"/>
+                    <constraint firstAttribute="trailing" secondItem="JQ9-JB-3bO" secondAttribute="trailing" constant="4" id="Arr-bp-S6X"/>
+                    <constraint firstItem="JQ9-JB-3bO" firstAttribute="top" secondItem="62g-8b-zUK" secondAttribute="top" id="CYY-Kp-qLx"/>
+                    <constraint firstItem="mZx-0c-2Wv" firstAttribute="leading" secondItem="62g-8b-zUK" secondAttribute="leading" constant="8" id="KcE-xm-azH"/>
+                    <constraint firstAttribute="bottom" secondItem="mZx-0c-2Wv" secondAttribute="bottom" constant="16" id="ih5-l0-8wB"/>
+                    <constraint firstItem="mZx-0c-2Wv" firstAttribute="top" secondItem="JQ9-JB-3bO" secondAttribute="bottom" constant="4" id="pPr-R1-6bb"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="127" height="47"/>
+            <connections>
+                <outlet property="numberLbl" destination="ypG-MC-kOM" id="6v9-au-6I0"/>
+                <outlet property="numberVw" destination="JQ9-JB-3bO" id="qmP-wX-joJ"/>
+                <outlet property="statusLbl" destination="mZx-0c-2Wv" id="2Jg-ey-bEG"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="34.486607142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

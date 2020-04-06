@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFg-Kv-P7I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapsWebViewVC-->
+        <scene sceneID="IUq-JA-yub">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="gFg-Kv-P7I" userLabel="MapsWebViewVC" customClass="MapsWebViewVC" customModule="covid_webinar_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTo-oC-kay">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlQ-6O-L5z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="upY-D8-1wN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="color" red="0.097913481299999994" green="0.39631065729999998" blue="0.81195306779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="upY-D8-1wN" firstAttribute="top" secondItem="Yfv-dB-3bh" secondAttribute="top" id="4HM-Rb-xkV"/>
+                            <constraint firstItem="upY-D8-1wN" firstAttribute="trailing" secondItem="Yfv-dB-3bh" secondAttribute="trailing" id="5sw-0M-zgj"/>
+                            <constraint firstItem="upY-D8-1wN" firstAttribute="leading" secondItem="Yfv-dB-3bh" secondAttribute="leading" id="7GQ-8d-7HO"/>
+                            <constraint firstItem="Yfv-dB-3bh" firstAttribute="trailing" secondItem="rlQ-6O-L5z" secondAttribute="trailing" id="EDu-rW-VCO"/>
+                            <constraint firstItem="rlQ-6O-L5z" firstAttribute="top" secondItem="Yfv-dB-3bh" secondAttribute="top" id="Uq0-ae-Dpx"/>
+                            <constraint firstItem="Yfv-dB-3bh" firstAttribute="bottom" secondItem="upY-D8-1wN" secondAttribute="bottom" id="XFS-VB-fCJ"/>
+                            <constraint firstItem="rlQ-6O-L5z" firstAttribute="leading" secondItem="Yfv-dB-3bh" secondAttribute="leading" id="fcH-0t-Rfm"/>
+                            <constraint firstItem="Yfv-dB-3bh" firstAttribute="bottom" secondItem="rlQ-6O-L5z" secondAttribute="bottom" id="oqu-5f-bhs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yfv-dB-3bh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mudik" id="4kT-75-6Jz"/>
+                    <connections>
+                        <outlet property="embedView" destination="rlQ-6O-L5z" id="mH7-MW-zwk"/>
+                        <outlet property="progressView" destination="upY-D8-1wN" id="g2j-lC-bPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzS-KO-3Ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2244.927536231884" y="174.10714285714286"/>
+        </scene>
+    </scenes>
+</document>

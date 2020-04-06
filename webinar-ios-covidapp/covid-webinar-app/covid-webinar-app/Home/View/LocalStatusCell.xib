@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LocalStatusCell" id="JJV-uU-A9w" customClass="LocalStatusCell" customModule="covid_webinar_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="s0r-7p-F5p">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7u1-ST-wtM" customClass="CardView" customModule="covid_webinar_app" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="142" height="128"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npm-9T-K8C">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9eX-Ex-fCe">
+                                        <rect key="frame" x="20" y="40.5" width="102" height="47.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1450" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfe-jb-f5V">
+                                                <rect key="frame" x="20.5" y="0.0" width="61.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <color key="textColor" red="0.78922885659999997" green="0.12577793000000001" blue="0.12765321139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATUS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Das-Iz-flw">
+                                                <rect key="frame" x="27" y="33" width="48.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" red="0.78922885659999997" green="0.12577793000000001" blue="0.12765321139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9eX-Ex-fCe" firstAttribute="leading" secondItem="Npm-9T-K8C" secondAttribute="leading" constant="20" id="L57-Q5-fXe"/>
+                                    <constraint firstAttribute="trailing" secondItem="9eX-Ex-fCe" secondAttribute="trailing" constant="20" id="LqV-bq-YVh"/>
+                                    <constraint firstItem="9eX-Ex-fCe" firstAttribute="centerY" secondItem="Npm-9T-K8C" secondAttribute="centerY" id="aar-6R-jZk"/>
+                                    <constraint firstItem="9eX-Ex-fCe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Npm-9T-K8C" secondAttribute="top" constant="20" id="fbV-Bl-aH1"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9eX-Ex-fCe" secondAttribute="bottom" constant="20" id="mAo-eL-W6b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Npm-9T-K8C" secondAttribute="bottom" id="6g9-Il-FTw"/>
+                            <constraint firstItem="Npm-9T-K8C" firstAttribute="leading" secondItem="7u1-ST-wtM" secondAttribute="leading" id="MoN-lP-YwX"/>
+                            <constraint firstAttribute="trailing" secondItem="Npm-9T-K8C" secondAttribute="trailing" id="X7Z-Sa-PJN"/>
+                            <constraint firstItem="Npm-9T-K8C" firstAttribute="top" secondItem="7u1-ST-wtM" secondAttribute="top" id="pon-Mn-g6I"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7u1-ST-wtM" secondAttribute="bottom" constant="4" id="5bh-Js-2dM"/>
+                    <constraint firstAttribute="trailing" secondItem="7u1-ST-wtM" secondAttribute="trailing" constant="4" id="8xJ-fj-lMp"/>
+                    <constraint firstItem="7u1-ST-wtM" firstAttribute="top" secondItem="s0r-7p-F5p" secondAttribute="top" constant="4" id="L0o-GY-jXx"/>
+                    <constraint firstItem="7u1-ST-wtM" firstAttribute="leading" secondItem="s0r-7p-F5p" secondAttribute="leading" constant="4" id="e3H-rl-dJD"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="212" height="118"/>
+            <connections>
+                <outlet property="numberLbl" destination="Hfe-jb-f5V" id="Kdf-7r-LD4"/>
+                <outlet property="statusLbl" destination="Das-Iz-flw" id="F2d-O6-060"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="71.651785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

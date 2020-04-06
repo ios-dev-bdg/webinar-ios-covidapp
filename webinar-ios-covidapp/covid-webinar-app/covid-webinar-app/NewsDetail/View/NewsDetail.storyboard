@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LWr-SA-846">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News DetailVC-->
+        <scene sceneID="T6s-fT-pIn">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="LWr-SA-846" customClass="NewsDetailVC" customModule="covid_webinar_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gun-Gk-WuW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-Cw-nI2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arR-M6-LE7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1495"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="4Aw-jS-q0B">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="cK1-Sm-9KE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1re-Ee-lS1">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAKARTA KARANTINA WILAYAH" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iG5-6T-yCD">
+                                                <rect key="frame" x="16" y="167.5" width="382" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oleh: Administrator,  Pada: Jumat, 3 April 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzq-Md-oy4">
+                                                <rect key="frame" x="16" y="195.5" width="382" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fJ-Oy-RFc">
+                                                <rect key="frame" x="24" y="274" width="366" height="1197"/>
+                                                <string key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis ornare ligula, sit amet tincidunt nibh. Praesent sed est fringilla nibh semper dapibus ac in ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In maximus, magna in convallis porttitor, lacus enim vehicula risus, ut fermentum tortor neque eu est. Vestibulum luctus hendrerit odio, eget feugiat nunc euismod et. Suspendisse potenti. Cras quis nulla et dolor facilisis euismod. Sed et diam commodo, cursus dolor nec, laoreet nunc.
+
+Nulla ultricies odio et volutpat facilisis. Sed nisi nibh, ullamcorper ac dolor eget, luctus placerat felis. Fusce accumsan convallis lectus eget rutrum. Suspendisse est sapien, dictum nec metus ut, sodales rutrum mi. Cras a ultrices ex. Quisque efficitur libero quis massa egestas consequat. Nullam quis ultricies augue. Donec ullamcorper cursus nunc, non commodo ligula egestas nec. Duis varius, elit auctor euismod convallis, turpis elit lobortis sapien, sit amet ullamcorper nulla est vel augue. Aenean vehicula fringilla dignissim. Donec congue turpis et elementum ultricies.
+
+In ex neque, euismod vel ligula at, interdum pulvinar mauris. Nulla vulputate eu odio vitae congue. Donec fringilla malesuada neque. Vivamus pulvinar erat sit amet felis fringilla efficitur. Praesent sollicitudin luctus nulla eget gravida. Nam eleifend quam a mollis venenatis. Aliquam sagittis leo sem, a lobortis lectus pellentesque non. Vestibulum sed leo elit. Vivamus sed tempus elit. Cras feugiat enim ut tincidunt placerat. Sed metus metus, finibus in magna eget, rutrum vehicula erat. Nulla facilisi.
+
+Fusce mattis tristique metus, nec varius quam vulputate sed. Donec vulputate, mi vitae eleifend porttitor, metus lorem semper quam, vel tempor ex ante a orci. Etiam varius, magna eget hendrerit ornare, eros lorem viverra nisi, sit amet tincidunt eros lectus vel tellus. Vestibulum nec fringilla magna, quis tincidunt ipsum. Vestibulum mollis turpis vel justo feugiat, tempus tempor nibh convallis. Ut tristique hendrerit vulputate. Nulla vitae aliquam est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris odio lectus, fermentum quis laoreet a, tincidunt eu urna. Praesent finibus condimentum massa elementum tempor. Vivamus ut lectus feugiat erat vehicula facilisis ac sit amet tortor. Vivamus rutrum mi sed euismod congue. Vivamus velit massa, pellentesque sit amet est nec, bibendum vehicula quam. In hac habitasse platea dictumst. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Kzq-Md-oy4" firstAttribute="bottom" secondItem="4Aw-jS-q0B" secondAttribute="bottom" constant="-16" id="4YN-dc-qZ1"/>
+                                            <constraint firstItem="1re-Ee-lS1" firstAttribute="centerX" secondItem="4Aw-jS-q0B" secondAttribute="centerX" id="8Vc-47-bz2"/>
+                                            <constraint firstItem="1re-Ee-lS1" firstAttribute="height" secondItem="4Aw-jS-q0B" secondAttribute="height" id="BiR-g9-b1G"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Aw-jS-q0B" secondAttribute="trailing" id="CuO-xT-qFX"/>
+                                            <constraint firstItem="1re-Ee-lS1" firstAttribute="centerY" secondItem="4Aw-jS-q0B" secondAttribute="centerY" id="G54-vh-WZ3"/>
+                                            <constraint firstItem="Kzq-Md-oy4" firstAttribute="top" secondItem="iG5-6T-yCD" secondAttribute="bottom" constant="4" id="Jjl-6Y-c54"/>
+                                            <constraint firstItem="3fJ-Oy-RFc" firstAttribute="leading" secondItem="arR-M6-LE7" secondAttribute="leading" constant="24" id="QYH-dC-dQR"/>
+                                            <constraint firstAttribute="trailing" secondItem="3fJ-Oy-RFc" secondAttribute="trailing" constant="24" id="TJa-y1-0F2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kzq-Md-oy4" secondAttribute="trailing" constant="16" id="Wvm-gX-lPu"/>
+                                            <constraint firstItem="iG5-6T-yCD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="arR-M6-LE7" secondAttribute="top" constant="16" id="Zn5-TA-06n"/>
+                                            <constraint firstItem="iG5-6T-yCD" firstAttribute="leading" secondItem="Kzq-Md-oy4" secondAttribute="leading" id="hLi-de-ikp"/>
+                                            <constraint firstItem="4Aw-jS-q0B" firstAttribute="top" secondItem="arR-M6-LE7" secondAttribute="top" id="mSh-Pb-CWI"/>
+                                            <constraint firstItem="1re-Ee-lS1" firstAttribute="width" secondItem="4Aw-jS-q0B" secondAttribute="width" id="nhp-xS-wV4"/>
+                                            <constraint firstItem="iG5-6T-yCD" firstAttribute="trailing" secondItem="Kzq-Md-oy4" secondAttribute="trailing" id="o6g-NY-sY3"/>
+                                            <constraint firstAttribute="bottom" secondItem="3fJ-Oy-RFc" secondAttribute="bottom" constant="24" id="pDJ-sr-Ozr"/>
+                                            <constraint firstItem="Kzq-Md-oy4" firstAttribute="leading" secondItem="arR-M6-LE7" secondAttribute="leading" constant="16" id="tQK-VV-pLk"/>
+                                            <constraint firstItem="3fJ-Oy-RFc" firstAttribute="top" secondItem="4Aw-jS-q0B" secondAttribute="bottom" constant="24" id="v2h-sI-FN2"/>
+                                            <constraint firstItem="4Aw-jS-q0B" firstAttribute="leading" secondItem="arR-M6-LE7" secondAttribute="leading" id="yTD-nK-j7Q"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="arR-M6-LE7" firstAttribute="bottom" secondItem="Wjq-Cw-nI2" secondAttribute="bottom" id="47Q-3b-JCY"/>
+                                    <constraint firstItem="arR-M6-LE7" firstAttribute="width" secondItem="Wjq-Cw-nI2" secondAttribute="width" id="Eyt-qu-RlL"/>
+                                    <constraint firstItem="arR-M6-LE7" firstAttribute="trailing" secondItem="Wjq-Cw-nI2" secondAttribute="trailing" id="WGy-MR-rX8"/>
+                                    <constraint firstItem="arR-M6-LE7" firstAttribute="leading" secondItem="Wjq-Cw-nI2" secondAttribute="leading" id="ocG-V0-pDm"/>
+                                    <constraint firstItem="arR-M6-LE7" firstAttribute="top" secondItem="Wjq-Cw-nI2" secondAttribute="top" id="wbG-lS-hvj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="md1-N7-81W"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="aED-ED-uLx"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wjq-Cw-nI2" firstAttribute="top" secondItem="Aag-a3-2Vr" secondAttribute="top" id="078-RD-QbT"/>
+                            <constraint firstItem="Aag-a3-2Vr" firstAttribute="trailing" secondItem="Wjq-Cw-nI2" secondAttribute="trailing" id="a2d-rI-69f"/>
+                            <constraint firstItem="Aag-a3-2Vr" firstAttribute="bottom" secondItem="Wjq-Cw-nI2" secondAttribute="bottom" id="tf2-DW-sXl"/>
+                            <constraint firstItem="Wjq-Cw-nI2" firstAttribute="leading" secondItem="Aag-a3-2Vr" secondAttribute="leading" id="w36-qr-tag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aag-a3-2Vr"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="1re-Ee-lS1" id="Lda-66-l2J"/>
+                        <outlet property="descLbl" destination="3fJ-Oy-RFc" id="2GJ-zb-8Id"/>
+                        <outlet property="imageView" destination="4Aw-jS-q0B" id="0CS-0Q-Q2B"/>
+                        <outlet property="titleLbl" destination="iG5-6T-yCD" id="fl5-O7-tNh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6Q-7a-gbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="-3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="300" height="168"/>
+    </resources>
+</document>

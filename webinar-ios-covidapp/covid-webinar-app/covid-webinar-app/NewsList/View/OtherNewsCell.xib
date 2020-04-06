@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OtherNewsCell" rowHeight="105" id="SGi-id-Scg" customClass="OtherNewsCell" customModule="covid_webinar_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SGi-id-Scg" id="awH-UG-UPb">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-m2-eth" customClass="CardView" customModule="covid_webinar_app" customModuleProvider="target">
+                        <rect key="frame" x="4" y="8" width="397" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzA-p6-Jzq">
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="n50-Lc-jkG">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="M6O-Zg-fTg"/>
+                                            <constraint firstAttribute="width" secondItem="n50-Lc-jkG" secondAttribute="height" multiplier="1:1" id="bar-FD-Jeb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAKARTA KARANTINA WILAYAH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6E-xY-ENo">
+                                        <rect key="frame" x="100" y="10" width="287" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEW-Z1-0zu">
+                                        <rect key="frame" x="100" y="31" width="287" height="33.5"/>
+                                        <string key="text">Konsep terpenting yang perlu dihayati dalam penanganan wabah seperti ini adalah EKSPONENSIAL. Kalau kita tidak memahami hal ini dan tetap berpikir dalam skala linear, selamanya kita tidak akan bisa menyelesaikan masalah ini.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iEW-Z1-0zu" secondAttribute="bottom" constant="10" id="4Da-vc-AlA"/>
+                                    <constraint firstItem="G6E-xY-ENo" firstAttribute="leading" secondItem="n50-Lc-jkG" secondAttribute="trailing" constant="10" id="NBY-x8-XDi"/>
+                                    <constraint firstAttribute="trailing" secondItem="G6E-xY-ENo" secondAttribute="trailing" constant="10" id="WW6-bt-5pm"/>
+                                    <constraint firstAttribute="bottom" secondItem="n50-Lc-jkG" secondAttribute="bottom" id="iCh-5z-qe7"/>
+                                    <constraint firstItem="iEW-Z1-0zu" firstAttribute="leading" secondItem="G6E-xY-ENo" secondAttribute="leading" id="kaA-Mw-vzu"/>
+                                    <constraint firstItem="G6E-xY-ENo" firstAttribute="top" secondItem="kzA-p6-Jzq" secondAttribute="top" constant="10" id="lXs-KO-MLR"/>
+                                    <constraint firstItem="iEW-Z1-0zu" firstAttribute="top" secondItem="G6E-xY-ENo" secondAttribute="bottom" constant="4" id="ofn-Th-Y4N"/>
+                                    <constraint firstItem="n50-Lc-jkG" firstAttribute="leading" secondItem="kzA-p6-Jzq" secondAttribute="leading" id="pOB-YW-D9r"/>
+                                    <constraint firstItem="n50-Lc-jkG" firstAttribute="top" secondItem="kzA-p6-Jzq" secondAttribute="top" id="rbL-Zy-I9r"/>
+                                    <constraint firstItem="iEW-Z1-0zu" firstAttribute="trailing" secondItem="G6E-xY-ENo" secondAttribute="trailing" id="wAL-BW-iM9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kzA-p6-Jzq" secondAttribute="bottom" id="fC5-09-H1E"/>
+                            <constraint firstItem="kzA-p6-Jzq" firstAttribute="leading" secondItem="O4m-m2-eth" secondAttribute="leading" id="qQe-eO-wNM"/>
+                            <constraint firstAttribute="trailing" secondItem="kzA-p6-Jzq" secondAttribute="trailing" id="qly-KK-nTO"/>
+                            <constraint firstItem="kzA-p6-Jzq" firstAttribute="top" secondItem="O4m-m2-eth" secondAttribute="top" id="zXt-bP-4FF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="O4m-m2-eth" secondAttribute="bottom" constant="8" id="ArA-Nf-AK7"/>
+                    <constraint firstItem="O4m-m2-eth" firstAttribute="leading" secondItem="awH-UG-UPb" secondAttribute="leading" constant="4" id="Nl7-7m-F7x"/>
+                    <constraint firstItem="O4m-m2-eth" firstAttribute="top" secondItem="awH-UG-UPb" secondAttribute="top" constant="8" id="cL8-5W-V4u"/>
+                    <constraint firstAttribute="trailing" secondItem="O4m-m2-eth" secondAttribute="trailing" constant="4" id="mAC-5p-TZT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descLbl" destination="iEW-Z1-0zu" id="5Ra-5W-5bJ"/>
+                <outlet property="newsImg" destination="n50-Lc-jkG" id="0H0-6f-MYo"/>
+                <outlet property="titleLbl" destination="G6E-xY-ENo" id="hbR-Lx-USr"/>
+            </connections>
+            <point key="canvasLocation" x="-100.72463768115942" y="63.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="300" height="168"/>
+    </resources>
+</document>
